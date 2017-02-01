@@ -1,0 +1,136 @@
+ul.hr {
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+}
+
+ul.hr li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 1px; /* Отступ слева */
+    border: 1px solid #000; /* Рамка вокруг текста */
+    padding: 2px; /* Поля вокруг текста */
+}
+
+body {
+    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+
+.menu, .menu ul {
+    /* Обнуляем отступы и убираем маркеры у списков */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    background: linear-gradient(to bottom, #fff, #f1f2f2); /* Градиент */
+    border: 1px solid #999; /* Параметры рамки */
+    padding: 0 5px; /* Поля */
+    font: 14px Arial, sans-serif; /* Параметры шрифта */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень под меню */
+}
+
+.menu > li {
+    display: inline-block; /* Выстраиваем по горизонтали */
+    border-right: 1px solid #fff; /* Белая линия справа */
+    position: relative; /* Относительное позиционирование */
+}
+
+.menu a {
+    text-decoration: none; /* Убираем подчёркивание */
+    color: #4c4c4c; /* Цвет ссылок */
+    display: block; /* Блочные ссылки */
+}
+
+.menu > li > a {
+    padding: 10px 15px; /* Поля */
+    border-right: 1px solid #d8d8d8; /* Серая линия справа */
+    position: relative;
+    z-index: 3; /* Выводим поверх остальных элементов */
+}
+
+.menu ul {
+    position: absolute; /* Абсолютное позиционирование */
+    display: none; /* Прячем подменю */
+    background: #fff; /* Цвет фона */
+    box-shadow: 0 0 10px #666; /* Параметры тени */
+}
+
+.menu ul a {
+    padding: 5px 10px; /* Поля */
+    box-shadow: 0 0 1px #666; /* Параметры тени */
+}
+
+.menu ul a:hover {
+    background: #008df2; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+}
+
+.menu li:hover ul {
+    display: block; /* Показываем подменю */
+}
+
+.menu > li:hover::before {
+    content: ''; /* Создаём пустой псевдоэлемент */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Размер совпадает с пунктом меню */
+    box-shadow: 0 5px 10px #666; /* Параметры тени */
+    position: absolute; /* Абсолютное позиционирование */
+}
+
+.menu > li:hover > a {
+    background: #fff; /* Цвет фона */
+}
+
+.menu ul {
+    list-style: none;
+    white-space: nowrap;
+    width: auto;
+}
+
+/* подменю уровня +1 */
+.menu ul ul {
+    left: 200px;
+    list-style: none;
+    white-space: nowrap;
+    width: auto;
+}
+
+.menu ul ul li {
+    position: relative; /* Относительное позиционирование */
+    display: none; /* Прячем подменю */
+    background: #fff; /* Цвет фона */
+    box-shadow: 0 0 1px #666; /* Параметры тени */
+}
+
+.menu ul ul a {
+    padding: 5px 10px; /* Поля */
+}
+
+.menu ul ul a:hover {
+    background: #4ef251; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+}
+
+.menu li:hover ul li:hover ul li {
+    display: block; /* Показываем подменю */
+}
+
+.menu > li:hover > li:hover::before {
+    content: ''; /* Создаём пустой псевдоэлемент */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Размер совпадает с пунктом меню */
+    box-shadow: 0 5px 10px #666; /* Параметры тени */
+    position: absolute; /* позиционирование */
+}
+
+.menu > li:hover > a li:hover > a {
+    background: #ffffff; /* Цвет фона */
+}
+
+.delimiter {
+    border-bottom: solid 1px black;
+}

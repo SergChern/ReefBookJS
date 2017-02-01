@@ -1,0 +1,85 @@
+<div>
+    <nav>
+        <ul class="menu">
+            <li><a href="T">Справочники</a>
+                <ul>
+                    <li><a [routerLink]="['item', '400']">Универсальный справочник</a></li>
+                    <li><a [routerLink]="['item', '104']">Материалы</a></li>
+                    <li><a [routerLink]="['item', '110']">Номенклатура МТ</a></li>
+                    <li><a [routerLink]="['item', '106']">Картотека МТ</a></li>
+                    <li><a [routerLink]="['item', '034']">Валюта</a></li>
+                    <li><a [routerLink]="['item', '116']">Курсы валют</a></li>
+                </ul>
+            </li>
+            <li><a [routerLink]="['item', '777']">Отчеты</a></li>
+            <li><a [routerLink]="['item', '']" >Система</a>
+                <ul>
+                    <li><a [routerLink]="['item', '088']">Сообщения</a></li>
+                    <li><a [routerLink]="['item', '']">Лог работы</a>
+                        <ul>
+                            <li><a [routerLink]="['item', '022']">Текущий</a></li>
+                            <li><a [routerLink]="['item', '094']">Архивный</a></li>
+                        </ul>
+                    </li>
+                    <li><a [routerLink]="['item', '042']">Переменные</a></li>
+                    <li><a [routerLink]="['item', '']">Системные справочники</a>
+                        <ul>
+                            <li><a [routerLink]="['item', '082']">Список операций Лога</a></li>
+                            <li><a [routerLink]="['item', '078']">Перечень языков в системе</a></li>
+                            <li><a [routerLink]="['item', '086']">Термины системы</a></li>
+                            <li><a [routerLink]="['item', '028']">Пол</a></li>
+                            <li><a [routerLink]="['item', '082']">Статусы|документа</a></li>
+                            <li><a [routerLink]="['item', '028']">Категории МТ</a></li>
+                            <li><a [routerLink]="['item', '028']">Вид МТ</a></li>
+                            <li><a [routerLink]="['item', '102']">Номенклатура ГП</a></li>
+                            <li><a [routerLink]="['item', '118']">Настройка протоколирования</a></li>
+                            <li><a [routerLink]="['item', '050']">Справочник "Единиц измерения"</a></li>
+                        </ul>
+                    </li>
+                    <li><a class='delimiter' [routerLink]="['item', '09A']">Смена пароля</a></li>
+                    <li><a [routerLink]="['item', '030']">Группы пользователей</a></li>
+                    <li><a class='delimiter' [routerLink]="['item', '032']">Список пользователей</a></li>
+                    <li><a [routerLink]="['item', '004']">Настройка отчетов</a></li>
+                    <li><a [routerLink]="['item', '018']">Определить список колонок</a></li>
+                    <li><a [routerLink]="['item', '016']">Настройка Доп.Меню</a></li>
+                    <li><a [routerLink]="['item', '012']">Удалить выбранные колонки</a></li>
+                    <li><a [routerLink]="['item', '026']">Настройка Списка выборок</a></li>
+                    <li><a [routerLink]="['item', '098']">Работа с графом</a></li>
+                    <li><a [routerLink]="['item', '002']">Настройка приложений</a></li>
+                    <li><a [routerLink]="['item', '048']">Перечень справочников</a></li>
+                    <li><a [routerLink]="['item', '008']">Текущие переменные</a></li>
+                    <li><a [routerLink]="['item', '038']">Внутренние переменные</a></li>
+                </ul>
+            </li>
+            <li><a [routerLink]="['item', '']" >Справка</a>
+                <ul>
+                    <li><a [routerLink]="['item', '084']">Содержание</a></li>
+                    <li><a [routerLink]="['item', 'h02']">О программе</a></li>
+                    <li><a [routerLink]="['item', 'h01']">Горячие клавиши</a></li>
+                </ul>
+            </li>
+            <li><a [routerLink]="['item', '']" >Горячие клавиши</a>
+                <ul>
+                    <li><a [routerLink]="['item', '???']">Контекстный HELP по точке (клав. F1)</a></li>
+                    <li><a [routerLink]="['item', '084']">Вызов HELP (клав. Ctrl+F1)</a></li>
+                    <li><a [routerLink]="['item', '???']">Выход (клав. Ctrl+X)</a></li>
+                    <li><a [routerLink]="['item', '???']">Открыть дизайнер</a></li>
+                    <li><a [routerLink]="['item', '???']">Работа с Графом приложения (клав. Ctrl+F9)</a></li>
+                    <li><a [routerLink]="['item', '038']">Внутренние переменные (клав. Ctrl+P)</a></li>
+                    <li><a [routerLink]="['item', '018']">Определить список колонок (клав. Ctrl+S)</a></li>
+                </ul>
+            </li>
+            <li><a [routerLink]="['item', '']" >Сценарий</a>
+                <ul>
+                    <li><a [routerLink]="['item', '???']">Дальше (клав. Alt+D)</a></li>
+                    <li><a [routerLink]="['item', '???']">Стоп (клав. Alt+S)</a></li>
+                    <li><a [routerLink]="['item', '???']">Назад (клав. Alt+N)</a></li>
+                    <li><a [routerLink]="['item', '???']">Список (клав. Alt+L)</a></li>
+                </ul>
+            </li>
+            <li><a [routerLink]="['item', '???']" >Выход</a></li>
+        </ul>
+    </nav>
+    <router-outlet></router-outlet>
+</div>
+
